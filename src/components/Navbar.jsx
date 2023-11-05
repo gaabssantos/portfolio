@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useContext } from "react";
 import "./Navbar.css";
-import { BsFillSunFill } from "react-icons/bs";
+import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("dark");
+  const { theme, setTheme } = useContext(ThemeContext);
 
   return (
     <nav>
@@ -20,7 +21,11 @@ const Navbar = () => {
         <li>
           <a href="#">Projetos</a>
         </li>
-        {theme === "dark" ? <BsFillSunFill /> : ""}
+        {theme === "dark" ? (
+          <BsFillSunFill color="#fff" onClick={() => setTheme("light")} />
+        ) : (
+          <BsFillMoonFill color="#151f42" onClick={() => setTheme("dark")} />
+        )}
       </ul>
     </nav>
   );
