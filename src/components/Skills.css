@@ -1,29 +1,35 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 .skill {
-    border: 3px solid #4568dc;
-    width: 200px;
-    text-align: center;
-    border-radius: 50px;
-    padding: 10px;
-    margin: 20px 30px;
+  border: 3px solid #4568dc;
+  width: 200px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 20px 30px;
 }
 
 .skill img {
-    width: 90px;
+  width: 90px;
+}
+
+.skill:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  transform: rotateX(60deg)
 }
 
 .skill span {
-    display: block;
-    color: #4568dc;
-    margin: 10px 0;
+  display: block;
+  color: #4568dc;
+  margin: 10px 0;
 }
 
 #skills {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    margin: 100px 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
 }
