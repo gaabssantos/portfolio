@@ -1,0 +1,44 @@
+h1 {
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  color: #7b8082;
+  font-size: 1.2rem;
+}
+
+#name {
+  color: #4568dc;
+}
+
+#about-me {
+  display: flex;
+  justify-content: space-around;
+}
+
+#image img {
+  width: 250px;
+  border-radius: 50%;
+  border: 10px solid #4568dc;
+}
+
+#about-text {
+    text-align: center;
+    margin: 100px auto;
+    width: 70%;
+}
+
+@media (max-width: 575px) {
+  #about-me {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  #about-me {
+    display: block;
+    text-align: center;
+  }
+}
