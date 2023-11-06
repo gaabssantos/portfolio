@@ -10,6 +10,7 @@ import { ThemeContext } from "./context/ThemeContext";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Contact from "./components/Contact";
 AOS.init();
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Projects />
+        <Contact />
       </div>
     </div>
   );

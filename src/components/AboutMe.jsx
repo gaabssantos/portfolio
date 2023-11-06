@@ -22,7 +22,7 @@ const AboutMe = () => {
         <h1>Sobre mim</h1>
         <p>
           Sou desenvolvedor front-end, tenho 4 anos de experiência em criação de
-          sites em HTML e CSS e 2 anos em React. Também possuo conhecimento em
+          sites em HTML e CSS e 2 anos em React. Cursei o ensino médio técnico no curso de informática, no qual eu comecei a me interessar pela área. Também possuo conhecimento em
           TypeScript, JavaScript, JavaScript moderno e Axios. Sou apaixonado
           pela programação e tecnologias novas, estou sempre me aperfeiçoando e
           estudando nesta área para ser, futuramente, um desenvolvedor full

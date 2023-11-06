@@ -27,7 +27,7 @@ h1 {
   margin: 10px 0;
 }
 
-#skills {
+#skills-container {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;

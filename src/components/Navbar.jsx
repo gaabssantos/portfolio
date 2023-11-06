@@ -16,10 +16,13 @@ const Navbar = () => {
           <a href="#about-me">Sobre mim</a>
         </li>
         <li>
-          <a href="#">Habilidades</a>
+          <a href="#skills">Habilidades</a>
         </li>
         <li>
-          <a href="#">Projetos</a>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#contact">Contato</a>
         </li>
         {theme === "dark" ? (
           <BsFillSunFill color="#fff" onClick={() => setTheme("light")} />

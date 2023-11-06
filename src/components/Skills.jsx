@@ -2,9 +2,9 @@ import "./Skills.css";
 
 const Skills = () => {
   return (
-    <div className="skills-container" data-aos="fade-down">
+    <div id="skills" data-aos="fade-down">
       <h1>Habilidades</h1>
-      <div id="skills">
+      <div id="skills-container">
         <div className="skill">
           <span>HTML5</span>
           <img src={"./languages/html5.svg"} alt="Logo HTML" />
