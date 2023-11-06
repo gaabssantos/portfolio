@@ -21,6 +21,12 @@ p {
   width: 250px;
   border-radius: 50%;
   border: 10px solid #4568dc;
+  cursor: pointer;
+  transition: .5s;
+}
+
+#image img:hover {
+  transform: rotate(360deg)
 }
 
 #about-text {

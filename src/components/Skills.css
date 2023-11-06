@@ -16,9 +16,9 @@ h1 {
 }
 
 .skill:hover {
-  transition: 0.5s;
+  transition: 1s;
   cursor: pointer;
-  transform: rotateX(60deg)
+  transform: scale(0.9)
 }
 
 .skill span {
