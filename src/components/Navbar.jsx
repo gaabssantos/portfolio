@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { ThemeContext } from "../context/ThemeContext";
 
-const Navbar = () => {
+const Navbar = ({ setOpenModal }) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   return (
@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="#contact">Contato</a>
         </li>
         {theme === "dark" ? (
-          <BsFillSunFill color="#fff" onClick={() => setTheme("light")} />
+          <BsFillSunFill color="#fff" onClick={() => setOpenModal(true)} />
         ) : (
           <BsFillMoonFill color="#151f42" onClick={() => setTheme("dark")} />
         )}

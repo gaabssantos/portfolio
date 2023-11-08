@@ -1,20 +1,22 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./App.css";
 
 import AboutMe from "./components/AboutMe";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import ModalTheme from "./components/ModalTheme";
 
 import { ThemeContext } from "./context/ThemeContext";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Contact from "./components/Contact";
 AOS.init();
 
 function App() {
   const { theme } = useContext(ThemeContext);
+  const [openModal, setOpenModal] = useState(false);
 
   if (theme === "light") {
     document.body.style.backgroundColor = "#fff";
@@ -30,13 +32,17 @@ function App() {
 
   return (
     <div>
-      <Navbar />
-      <div className="container">
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
+      <Navbar setOpenModal={setOpenModal} />
+      {!openModal ? (
+        <div className="container">
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <Contact />
+        </div>
+      ) : (
+        <ModalTheme isOpen={openModal} setOpen={setOpenModal} />
+      )}
     </div>
   );
 }
