@@ -33,16 +33,13 @@ function App() {
   return (
     <div>
       <Navbar setOpenModal={setOpenModal} />
-      {!openModal ? (
         <div className="container">
           <AboutMe />
           <Skills />
           <Projects />
           <Contact />
         </div>
-      ) : (
         <ModalTheme isOpen={openModal} setOpen={setOpenModal} />
-      )}
     </div>
   );
 }
