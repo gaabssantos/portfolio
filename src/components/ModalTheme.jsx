@@ -1,6 +1,9 @@
 import { AiOutlineClose } from "react-icons/ai";
 
+<<<<<<< HEAD
 import "./Modal.css";
+=======
+>>>>>>> 094ee08fd87c1d12db329d15bb0e69361df753c8
 import "./ModalTheme.css";
 
 import { useContext } from "react";
@@ -20,7 +23,11 @@ const ModalTheme = ({ isOpen, setOpen }) => {
 
   if (isOpen) {
     return (
+<<<<<<< HEAD
       <div className="background-modal" data-aos="zoom-out">
+=======
+      <div className="background-modal">
+>>>>>>> 094ee08fd87c1d12db329d15bb0e69361df753c8
         <AiOutlineClose onClick={handleCloseModal} />
         <div className="modal">
           <h2>Você tem certeza?</h2>

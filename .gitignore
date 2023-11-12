@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
+=======
+
+package-lock.json
+package.json
+index.html
+vite.config.ts
+.eslintrc.cjs
+>>>>>>> 094ee08fd87c1d12db329d15bb0e69361df753c8

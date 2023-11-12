@@ -3,7 +3,10 @@ import { data } from "../data/project";
 import "./Projects.css";
 
 const Projects = () => {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 094ee08fd87c1d12db329d15bb0e69361df753c8
   const handleOverProjects = (id) => {
     document.getElementById(id).classList.add("hide");
     document.querySelector("#action-" + id).classList.remove("hide");
