@@ -1,0 +1,71 @@
+#projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+.project {
+  position: relative;
+  margin: 40px 18px;
+  cursor: pointer;
+  border-bottom: 5px solid #4568dc;
+  width: 350px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.project:hover {
+  transform: scale(1.2);
+}
+
+.informations {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000063;
+}
+
+.informations h1 {
+  padding-top: 50px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.actions {
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.actions button {
+    cursor: pointer;
+    display: block;
+    margin: 70px auto;
+    background-color: #4568dc;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+#used-skills {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+#used-skills img {
+  width: 25px;
+  margin: 0 5px;
+}
+
+.hide {
+    display: none !important;
+}

@@ -1,0 +1,11 @@
+.modal .actions #btn-yes {
+  text-align: center;
+  background-color: #6fe866;
+  width: 20%;
+}
+
+.modal .actions #btn-no {
+  text-align: center;
+  background-color: #fa4b57;
+  width: 20%;
+}

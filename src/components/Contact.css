@@ -1,0 +1,59 @@
+#contact {
+  margin-top: 35px;
+}
+
+#contact-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+#contact-container p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.contact {
+  transition: 0.2s;
+  margin: 0 30px;
+}
+
+.contact:hover {
+  transform: scale(1.1);
+}
+
+.contact span {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.contact svg {
+  font-size: 2rem;
+  color: #4568dc;
+  border: 1px solid #4568dc;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+@media (max-width: 575px) {
+  #contact-container {
+    display: block;
+  }
+
+  .contact {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  #contact-container {
+    display: block;
+  }
+
+  .contact {
+    margin-top: 25px;
+  }
+}
