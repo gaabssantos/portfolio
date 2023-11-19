@@ -1,0 +1,59 @@
+.project-container h1 {
+  margin: 20px 0;
+}
+
+.images {
+  width: 40%;
+  text-align: center;
+  margin: 20px 50px;
+}
+
+.informations-project {
+  display: flex;
+}
+
+.description {
+  width: 50%;
+}
+
+.description .action button {
+  cursor: pointer;
+  display: block;
+  margin: 40px 20px;
+  background-color: #4568dc;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.description .action button:hover {
+  opacity: 1;
+}
+
+.description .action {
+  display: flex;
+  justify-content: center;
+}
+
+.description .action svg {
+  margin: 0 8px;
+  font-size: 1.7rem;
+  position: relative;
+  top: 7px;
+}
+
+@media (max-width: 575px) {
+  .informations-project {
+    display: block;
+    text-align: center;
+  }
+
+  .description,
+  .images {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
