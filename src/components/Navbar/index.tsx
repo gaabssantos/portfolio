@@ -1,4 +1,5 @@
 import Logo from "../../assets/logo.svg";
+import Menu from "../Menu";
 import { Container } from "./styles";
 
 const Navbar = () => {
@@ -12,6 +13,7 @@ const Navbar = () => {
         <li>Projetos</li>
         <li>Contato</li>
       </ul>
+      <Menu />
     </Container>
   );
 };

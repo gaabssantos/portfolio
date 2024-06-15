@@ -31,7 +31,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     ul li {
       display: none;
     }
