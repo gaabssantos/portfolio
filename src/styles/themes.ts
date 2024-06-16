@@ -3,6 +3,7 @@ export const colors = {
   secondary: "#2C1250",
   specialText: "#7127BA",
   navbar: "#1A0B2E",
+  borderColor: "#4F228D",
   white: "#FFFFFF",
 };
 
