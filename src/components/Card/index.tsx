@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 
 import { Text } from "..";
 
+import CircleGradient from "../CircleGradient";
 import IconWork from "../IconWork";
 import { Container, Title } from "./styles";
 
@@ -12,13 +13,16 @@ type CardProps = {
 
 const Card = ({ title, children }: CardProps) => {
   return (
-    <Container>
-      <IconWork />
-      <div>
-        <Title>{title}</Title>
-        <Text>{children}</Text>
-      </div>
-    </Container>
+    <>
+      <CircleGradient />
+      <Container>
+        <IconWork />
+        <div>
+          <Title>{title}</Title>
+          <Text>{children}</Text>
+        </div>
+      </Container>
+    </>
   );
 };
 

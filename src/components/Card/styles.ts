@@ -26,10 +26,17 @@ export const Container = styled.div`
   p {
     font-size: 0.625rem;
     width: 80%;
+    font-family: ${fonts.secondary};
   }
 
   svg {
     width: 83rem;
+  }
+
+  h1 {
+    @media (max-width: 600px) {
+      font-size: 1.56rem;
+    }
   }
 `;
 
