@@ -4,6 +4,7 @@ export const colors = {
   specialText: "#7127BA",
   navbar: "#1A0B2E",
   borderColor: "#4F228D",
+  circleColor: "#251C31",
   white: "#FFFFFF",
 };
 

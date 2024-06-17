@@ -13,14 +13,3 @@ export const Container = styled.div`
     }
   }
 `;
-
-export const Main = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  @media (max-width: 800px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
