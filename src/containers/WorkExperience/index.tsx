@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 
 const WorkExperience = () => {
   return (
-    <>
+    <section>
       <Title>Experiência profissional</Title>
       <Card title="Freelancer">
         Desenvolvedor Freelancer com paixão pela criação de projetos inovadores
@@ -13,7 +13,7 @@ const WorkExperience = () => {
         vez mais a tecnologia utilizada. Procuro a minha primeira experiência
         profissional na área, portanto, estudo todos os dias para isso! {":)"}
       </Card>
-    </>
+    </section>
   );
 };
 
