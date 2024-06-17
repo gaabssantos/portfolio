@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const Container = styled.section`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
 export const CircleImage = styled.img`
   position: absolute;
   width: 20rem;

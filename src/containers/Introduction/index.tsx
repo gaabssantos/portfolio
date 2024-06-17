@@ -2,11 +2,16 @@ import Circle from "../../assets/boy-circle.svg";
 import Boy from "../../assets/boy-computer.png";
 import { SpecialText, Text, Title } from "../../components";
 import Arrow from "../../components/Arrow";
-import { BoyImage, CircleImage, IntroductionContainer } from "./styles";
+import {
+  BoyImage,
+  CircleImage,
+  Container,
+  IntroductionContainer,
+} from "./styles";
 
 const Introduction = () => {
   return (
-    <>
+    <Container>
       <CircleImage src={Circle} alt="circulo" />
       <IntroductionContainer>
         <Arrow />
@@ -21,7 +26,7 @@ const Introduction = () => {
           <SpecialText>desafiada</SpecialText>.
         </Title>
       </div>
-    </>
+    </Container>
   );
 };
 
