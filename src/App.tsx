@@ -1,6 +1,7 @@
 import { SpecialText, Text, Title, Spacer } from "./components";
 import Navbar from "./components/Navbar";
 import Introduction from "./containers/Introduction";
+import Projects from "./containers/Projects";
 import Stacks from "./containers/Stacks";
 import WorkExperience from "./containers/WorkExperience";
 import { Container } from "./styles";
@@ -27,6 +28,13 @@ function App() {
         <WorkExperience />
         <Spacer size={6} />
         <Stacks />
+        <Spacer size={5} />
+        <Projects title="Projeto teste">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste error
+          illo tenetur corrupti ratione laboriosam illum ipsam eius non
+          quisquam? Autem tempora quia incidunt corporis est, ullam soluta
+          officiis culpa?
+        </Projects>
       </Container>
     </div>
   );
