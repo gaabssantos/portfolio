@@ -1,5 +1,5 @@
-import Circle from "../../assets/boy-circle.svg";
-import Boy from "../../assets/boy-computer.png";
+import Circle from "../../assets/introduction-section/boy-circle.svg";
+import Boy from "../../assets/introduction-section/boy-computer.png";
 import { SpecialText, Text, Title } from "../../components";
 import Arrow from "../../components/Arrow";
 import {
