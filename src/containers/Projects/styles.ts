@@ -2,15 +2,21 @@ import styled from "styled-components";
 
 import { colors, fonts } from "../../styles/themes";
 
-export const Container = styled.div`
+type ProjectProps = {
+  reverse?: string;
+};
+
+export const Container = styled.div<ProjectProps>`
   display: flex;
+  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   font-family: ${fonts.secondary};
   margin-bottom: 2.5rem;
   cursor: pointer;
+  margin-top: 5rem;
 
   img {
     position: relative;
-    right: 10%;
+    right: ${(props) => (props.reverse ? "-5%" : "10%")};
     z-index: -1;
   }
   img#project-image {
@@ -38,7 +44,13 @@ export const ProjectDescription = styled.div`
   color: ${colors.white};
 `;
 
-export const ProjectStacks = styled.div`
-  position: relative;
-  right: 15%;
+export const ProjectHeader = styled.div<ProjectProps>`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`;
+
+export const ProjectStacks = styled.div<ProjectProps>`
+  position: absolute;
+  right: ${(props) => (props.reverse ? "88%" : "12%")};
 `;

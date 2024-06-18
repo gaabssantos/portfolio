@@ -30,16 +30,32 @@ function App() {
         <Spacer size={6} />
         <Stacks />
         <Spacer size={5} />
-        {projects.map((project) => (
-          <Projects
-            key={project.id}
-            title={project.name}
-            image={project.image}
-            stacks={project.stacks}
-          >
-            {project.description}
-          </Projects>
-        ))}
+        {projects.map((project, i) => {
+          if (i % 2 === 0) {
+            return (
+              <Projects
+                key={project.id}
+                title={project.name}
+                image={project.image}
+                stacks={project.stacks}
+              >
+                {project.description}
+              </Projects>
+            );
+          } else {
+            return (
+              <Projects
+                key={project.id}
+                title={project.name}
+                image={project.image}
+                stacks={project.stacks}
+                reverse="true"
+              >
+                {project.description}
+              </Projects>
+            );
+          }
+        })}
       </Container>
     </div>
   );
