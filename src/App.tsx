@@ -19,11 +19,13 @@ function App() {
         </Reveal>
         <Spacer size={4} responsive={"true"} />
         <Reveal>
-          <Title>Eu sou um Desenvolvedor Front-end.</Title>
-          <Text>
-            Atualmente, eu sou um desenvolvedor front-end{" "}
-            <SpecialText>freelancer</SpecialText>.
-          </Text>
+          <section id="about">
+            <Title>Eu sou um Desenvolvedor Front-end.</Title>
+            <Text>
+              Atualmente, eu sou um desenvolvedor front-end{" "}
+              <SpecialText>freelancer</SpecialText>.
+            </Text>
+          </section>
         </Reveal>
         <Spacer size={4.375} />
         <Reveal>
