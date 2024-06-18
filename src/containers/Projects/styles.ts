@@ -6,11 +6,16 @@ export const Container = styled.div`
   display: flex;
   font-family: ${fonts.secondary};
   margin-bottom: 2.5rem;
+  cursor: pointer;
 
   img {
     position: relative;
     right: 10%;
     z-index: -1;
+  }
+  img#project-image {
+    width: 500px;
+    height: 300px;
   }
 
   @media (max-width: 600px) {
