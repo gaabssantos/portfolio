@@ -4,7 +4,7 @@ import { colors, fonts } from "../styles/themes";
 
 type SpacerProps = {
   size: number;
-  responsive?: boolean;
+  responsive?: string;
 };
 
 export const Title = styled.h1`
