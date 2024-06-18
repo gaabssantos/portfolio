@@ -1,5 +1,6 @@
 import { SpecialText, Text, Title, Spacer } from "./components";
 import Navbar from "./components/Navbar";
+import Contact from "./containers/Contact";
 import Introduction from "./containers/Introduction";
 import Projects from "./containers/Projects";
 import Stacks from "./containers/Stacks";
@@ -9,7 +10,7 @@ import { Container } from "./styles";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
       <Container>
         <Introduction />
@@ -56,8 +57,10 @@ function App() {
             );
           }
         })}
+        <Spacer size={5} />
+        <Contact />
       </Container>
-    </div>
+    </>
   );
 }
 
