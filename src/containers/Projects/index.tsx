@@ -22,7 +22,7 @@ type ProjectsProps = {
   stacks: { id: number; image: string; name: string }[];
   reverse?: string;
   githubLink: string;
-  deployLink: string;
+  deployLink?: string;
 };
 
 const style = {
@@ -67,11 +67,13 @@ const Projects = ({
                 <FaGithub /> Github
               </Button>
             </a>
-            <a href={deployLink} target="_blank">
-              <Button>
-                <FaComputer /> Deploy
-              </Button>
-            </a>
+            {deployLink && (
+              <a href={deployLink} target="_blank">
+                <Button>
+                  <FaComputer /> Deploy
+                </Button>
+              </a>
+            )}
           </Actions>
         </Box>
       </Modal>

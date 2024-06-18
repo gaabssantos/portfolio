@@ -1,5 +1,6 @@
 import { SpecialText, Text, Title, Spacer } from "./components";
 import Navbar from "./components/Navbar";
+import Reveal from "./components/Reveal";
 import Contact from "./containers/Contact";
 import Introduction from "./containers/Introduction";
 import Projects from "./containers/Projects";
@@ -13,56 +14,70 @@ function App() {
     <>
       <Navbar />
       <Container>
-        <Introduction />
+        <Reveal>
+          <Introduction />
+        </Reveal>
         <Spacer size={4} responsive={"true"} />
-        <Title>Eu sou um Desenvolvedor Front-end.</Title>
-        <Text>
-          Atualmente, eu sou um desenvolvedor front-end{" "}
-          <SpecialText>freelancer</SpecialText>.
-        </Text>
+        <Reveal>
+          <Title>Eu sou um Desenvolvedor Front-end.</Title>
+          <Text>
+            Atualmente, eu sou um desenvolvedor front-end{" "}
+            <SpecialText>freelancer</SpecialText>.
+          </Text>
+        </Reveal>
         <Spacer size={4.375} />
-        <Text>
-          Um desenvolvedor front-end com paixão de criar projetos inovadores e
-          aprender novas tecnologias e utilizar. Comecei na área em 2019, quando
-          realizei o ensino médio técnico no curso de informática.
-        </Text>
+        <Reveal>
+          <Text>
+            Um desenvolvedor front-end com paixão de criar projetos inovadores e
+            aprender novas tecnologias e utilizar. Comecei na área em 2019,
+            quando realizei o ensino médio técnico no curso de informática.
+          </Text>
+        </Reveal>
         <Spacer size={5} />
-        <WorkExperience />
+        <Reveal>
+          <WorkExperience />
+        </Reveal>
         <Spacer size={6} />
-        <Stacks />
+        <Reveal>
+          <Stacks />
+        </Reveal>
         <Spacer size={5} />
-        {projects.map((project, i) => {
-          if (i % 2 === 0) {
-            return (
-              <Projects
-                key={project.id}
-                title={project.name}
-                image={project.image}
-                stacks={project.stacks}
-                githubLink={project.githubLink}
-                deployLink={project.deployLink}
-              >
-                {project.description}
-              </Projects>
-            );
-          } else {
-            return (
-              <Projects
-                key={project.id}
-                title={project.name}
-                image={project.image}
-                stacks={project.stacks}
-                githubLink={project.githubLink}
-                deployLink={project.deployLink}
-                reverse="true"
-              >
-                {project.description}
-              </Projects>
-            );
-          }
-        })}
+        <Reveal>
+          {projects.map((project, i) => {
+            if (i % 2 === 0) {
+              return (
+                <Projects
+                  key={project.id}
+                  title={project.name}
+                  image={project.image}
+                  stacks={project.stacks}
+                  githubLink={project.githubLink}
+                  deployLink={project.deployLink && project.deployLink}
+                >
+                  {project.description}
+                </Projects>
+              );
+            } else {
+              return (
+                <Projects
+                  key={project.id}
+                  title={project.name}
+                  image={project.image}
+                  stacks={project.stacks}
+                  githubLink={project.githubLink}
+                  deployLink={project.deployLink && project.deployLink}
+                  reverse="true"
+                >
+                  {project.description}
+                </Projects>
+              );
+            }
+          })}
+        </Reveal>
         <Spacer size={5} />
-        <Contact />
+        <Reveal>
+          <Contact />
+        </Reveal>
       </Container>
     </>
   );
