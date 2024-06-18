@@ -39,6 +39,8 @@ function App() {
                 title={project.name}
                 image={project.image}
                 stacks={project.stacks}
+                githubLink={project.githubLink}
+                deployLink={project.deployLink}
               >
                 {project.description}
               </Projects>
@@ -50,6 +52,8 @@ function App() {
                 title={project.name}
                 image={project.image}
                 stacks={project.stacks}
+                githubLink={project.githubLink}
+                deployLink={project.deployLink}
                 reverse="true"
               >
                 {project.description}

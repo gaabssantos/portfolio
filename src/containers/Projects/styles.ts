@@ -81,3 +81,37 @@ export const ProjectStacks = styled.div<ProjectProps>`
     right: 85%;
   }
 `;
+
+export const Button = styled.button`
+  background: ${colors.secondary};
+  border: 0;
+  border: 1px solid #000;
+  padding: 0.2rem;
+  cursor: pointer;
+  color: ${colors.white};
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  svg {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+export const Actions = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+`;
