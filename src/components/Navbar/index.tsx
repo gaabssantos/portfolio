@@ -7,11 +7,21 @@ const Navbar = () => {
     <Container>
       <img src={Logo} alt="logo" />
       <ul>
-        <li>Home</li>
-        <li>Sobre</li>
-        <li>Experiência</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">Sobre</a>
+        </li>
+        <li>
+          <a href="#works">Experiência</a>
+        </li>
+        <li>
+          <a href="#projects">Projetos</a>
+        </li>
+        <li>
+          <a href="#contact">Contato</a>
+        </li>
       </ul>
       <Menu />
     </Container>

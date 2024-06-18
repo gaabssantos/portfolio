@@ -77,7 +77,7 @@ const Projects = ({
           </Actions>
         </Box>
       </Modal>
-      <Container reverse={reverse} onClick={handleOpen}>
+      <Container reverse={reverse} onClick={handleOpen} id="projects">
         <div>
           {reverse ? (
             <ProjectHeader>

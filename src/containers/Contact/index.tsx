@@ -5,7 +5,7 @@ import { Container, SocialMedia } from "./styles";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <Title>Contato</Title>
       <Text>
         Atualmente, estou procurando entrar em uma equipe de desenvolvimento.

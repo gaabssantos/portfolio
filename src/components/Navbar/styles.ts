@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { colors, fonts } from "../../styles/themes";
 
-export const Container = styled.div`
+export const Container = styled.nav`
   color: ${colors.white};
   background-color: ${colors.navbar};
   font-family: ${fonts.navbar};

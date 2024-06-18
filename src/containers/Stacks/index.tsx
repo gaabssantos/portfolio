@@ -5,7 +5,7 @@ import { Container, StacksContainer } from "./styles";
 
 const Stacks = () => {
   return (
-    <Container>
+    <Container id="stacks">
       <Text>
         Eu, atualmente, estou procurando entrar em uma{" "}
         <SpecialText>equipe de desenvolvimento</SpecialText>, de acordo com

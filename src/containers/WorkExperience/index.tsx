@@ -3,7 +3,7 @@ import Card from "../../components/Card";
 
 const WorkExperience = () => {
   return (
-    <section>
+    <section id="works">
       <Title>Experiência profissional</Title>
       <Card title="Freelancer">
         Desenvolvedor Freelancer com paixão pela criação de projetos inovadores
