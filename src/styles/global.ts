@@ -13,4 +13,9 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background-color: ${colors.primary};
     }
+
+    a {
+        text-decoration: none;
+        color: ${colors.white};
+    }
 `;
