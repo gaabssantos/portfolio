@@ -4,6 +4,7 @@ import git from "../assets/stacks-icon/git.svg";
 import github from "../assets/stacks-icon/github.svg";
 import html5 from "../assets/stacks-icon/html5.svg";
 import javascript from "../assets/stacks-icon/javascript.svg";
+import jquery from "../assets/stacks-icon/jquery.svg";
 import react from "../assets/stacks-icon/react.svg";
 import typescript from "../assets/stacks-icon/typescript.svg";
 
@@ -40,11 +41,16 @@ const stacks = [
   },
   {
     id: 7,
+    name: "jquery",
+    icon: jquery,
+  },
+  {
+    id: 8,
     name: "git",
     icon: git,
   },
   {
-    id: 8,
+    id: 9,
     name: "github",
     icon: github,
   },

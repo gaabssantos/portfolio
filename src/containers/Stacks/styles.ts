@@ -14,4 +14,8 @@ export const StacksContainer = styled.div`
   gap: 1rem;
   width: 50%;
   margin-top: 2rem;
+
+  img {
+    pointer-events: none;
+  }
 `;
