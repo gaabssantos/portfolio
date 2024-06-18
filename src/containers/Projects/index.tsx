@@ -39,7 +39,7 @@ const Projects = ({
         )}
         <ProjectDescription>{children}</ProjectDescription>
       </div>
-      <img src={image} alt="instagram-clone" id="project-image" />
+      <img src={image} alt="imagem-do-projeto" id="project-image" />
       <ProjectStacks reverse={reverse}>
         {stacks.map((stack) => (
           <img key={stack.id} src={stack.image} alt={stack.name} />

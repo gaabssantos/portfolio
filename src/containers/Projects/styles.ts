@@ -18,14 +18,28 @@ export const Container = styled.section<ProjectProps>`
     position: relative;
     right: ${(props) => (props.reverse ? "-5%" : "10%")};
     z-index: -1;
+
+    @media (max-width: 1200px) {
+      position: static;
+    }
   }
   img#project-image {
     width: 500px;
     height: 300px;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1200px) {
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    h1 {
+      text-align: left;
+    }
+
+    img#project-image {
+      width: 120%;
+    }
   }
 `;
 
@@ -42,15 +56,28 @@ export const ProjectDescription = styled.div`
   width: 32rem;
   padding: 2rem;
   color: ${colors.white};
+
+  @media (max-width: 1200px) {
+    width: 110%;
+    margin-bottom: 1rem;
+  }
 `;
 
-export const ProjectHeader = styled.div<ProjectProps>`
+export const ProjectHeader = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media (max-width: 1200px) {
+    align-items: start;
+  }
 `;
 
 export const ProjectStacks = styled.div<ProjectProps>`
   position: absolute;
   right: ${(props) => (props.reverse ? "88%" : "12%")};
+
+  @media (max-width: 1200px) {
+    right: 85%;
+  }
 `;

@@ -16,6 +16,20 @@ const projects = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "Instagram clone",
+    description:
+      "Um projeto que simula a requisição de postagens e stories do Instagram, pela API do Pexels. Utilizei o Axios para capturar os dados e exibir para o usuário.",
+    image: instagramClone,
+    stacks: [
+      {
+        id: 1,
+        name: "react",
+        image: react,
+      },
+    ],
+  },
 ];
 
 export default projects;

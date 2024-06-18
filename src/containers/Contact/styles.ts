@@ -32,4 +32,9 @@ export const SocialMedia = styled.div`
       opacity: 0.8;
     }
   }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    margin-top: 1rem;
+  }
 `;
