@@ -6,7 +6,7 @@ type ProjectProps = {
   reverse?: string;
 };
 
-export const Container = styled.div<ProjectProps>`
+export const Container = styled.section<ProjectProps>`
   display: flex;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   font-family: ${fonts.secondary};
