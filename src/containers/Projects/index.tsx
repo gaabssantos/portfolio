@@ -1,17 +1,16 @@
 import { ReactNode } from "react";
 
-import projectImage from "../../assets/projects/project-image.svg";
-import css3 from "../../assets/stacks-icon/css3.svg";
-import html5 from "../../assets/stacks-icon/html5.svg";
 import { SpecialText, Title } from "../../components";
 import { Container, ProjectDescription, ProjectStacks } from "./styles";
 
 type ProjectsProps = {
   title: string;
   children: ReactNode;
+  image: string;
+  stacks: { id: number; image: string; name: string }[];
 };
 
-const Projects = ({ title, children }: ProjectsProps) => {
+const Projects = ({ title, children, image, stacks }: ProjectsProps) => {
   return (
     <Container>
       <div>
@@ -19,10 +18,11 @@ const Projects = ({ title, children }: ProjectsProps) => {
         <Title>{title}</Title>
         <ProjectDescription>{children}</ProjectDescription>
       </div>
-      <img src={projectImage} alt="instagram-clone" />
+      <img src={image} alt="instagram-clone" id="project-image" />
       <ProjectStacks>
-        <img src={html5} alt="html5" />
-        <img src={css3} alt="html5" />
+        {stacks.map((stack) => (
+          <img key={stack.id} src={stack.image} alt={stack.name} />
+        ))}
       </ProjectStacks>
     </Container>
   );
