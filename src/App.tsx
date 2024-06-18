@@ -4,6 +4,7 @@ import Introduction from "./containers/Introduction";
 import Projects from "./containers/Projects";
 import Stacks from "./containers/Stacks";
 import WorkExperience from "./containers/WorkExperience";
+import projects from "./scripts/projects";
 import { Container } from "./styles";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Container>
         <Introduction />
-        <Spacer size={4} responsive />
+        <Spacer size={4} responsive={"true"} />
         <Title>Eu sou um Desenvolvedor Front-end.</Title>
         <Text>
           Atualmente, eu sou um desenvolvedor front-end{" "}
@@ -29,12 +30,16 @@ function App() {
         <Spacer size={6} />
         <Stacks />
         <Spacer size={5} />
-        <Projects title="Projeto teste">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste error
-          illo tenetur corrupti ratione laboriosam illum ipsam eius non
-          quisquam? Autem tempora quia incidunt corporis est, ullam soluta
-          officiis culpa?
-        </Projects>
+        {projects.map((project) => (
+          <Projects
+            key={project.id}
+            title={project.name}
+            image={project.image}
+            stacks={project.stacks}
+          >
+            {project.description}
+          </Projects>
+        ))}
       </Container>
     </div>
   );
