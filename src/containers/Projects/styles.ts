@@ -11,7 +11,6 @@ export const Container = styled.section<ProjectProps>`
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
   font-family: ${fonts.secondary};
   margin-bottom: 2.5rem;
-  cursor: pointer;
   margin-top: 5rem;
 
   img {
@@ -56,6 +55,7 @@ export const ProjectDescription = styled.div`
   width: 32rem;
   padding: 2rem;
   color: ${colors.white};
+  cursor: pointer;
 
   @media (max-width: 1200px) {
     width: 110%;
@@ -79,6 +79,10 @@ export const ProjectStacks = styled.div<ProjectProps>`
 
   @media (max-width: 1200px) {
     right: 85%;
+  }
+
+  img {
+    display: block;
   }
 `;
 

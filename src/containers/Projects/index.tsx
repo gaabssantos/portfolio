@@ -77,7 +77,7 @@ const Projects = ({
           </Actions>
         </Box>
       </Modal>
-      <Container reverse={reverse} onClick={handleOpen} id="projects">
+      <Container reverse={reverse} id="projects">
         <div>
           {reverse ? (
             <ProjectHeader>
@@ -90,7 +90,9 @@ const Projects = ({
               <Title>{title}</Title>
             </>
           )}
-          <ProjectDescription>{children}</ProjectDescription>
+          <ProjectDescription onClick={handleOpen}>
+            {children}
+          </ProjectDescription>
         </div>
         <img src={image} alt="imagem-do-projeto" id="project-image" />
         <ProjectStacks reverse={reverse}>
