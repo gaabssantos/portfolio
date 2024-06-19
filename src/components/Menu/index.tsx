@@ -18,11 +18,19 @@ function Menu() {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {["Home", "Sobre", "Experiência", "Projetos", "Contato"].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemText primary={text} />
-            </ListItemButton>
+        {[
+          { name: "Home", href: "#" },
+          { name: "Sobre", href: "#about" },
+          { name: "Experiência", href: "#works" },
+          { name: "Projetos", href: "#projects" },
+          { name: "Contato", href: "#contact" },
+        ].map((text) => (
+          <ListItem key={text.name} disablePadding>
+            <a href={text.href} style={{ width: "100%" }}>
+              <ListItemButton>
+                <ListItemText primary={text.name} sx={{ color: "#000000" }} />
+              </ListItemButton>
+            </a>
           </ListItem>
         ))}
       </List>
