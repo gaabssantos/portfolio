@@ -11,6 +11,12 @@ export const Container = styled.section`
       opacity: 0.8;
     }
   }
+
+  @media (max-width: 600px) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
 export const SocialMedia = styled.div`

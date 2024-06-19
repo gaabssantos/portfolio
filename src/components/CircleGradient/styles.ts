@@ -6,7 +6,7 @@ export const Svg = styled.svg`
   bottom: -145%;
   left: 26%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `;
