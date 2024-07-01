@@ -37,7 +37,7 @@ const projects = [
     id: 2,
     name: "Code Burger",
     description:
-      "Um projeto que simula uma haburgueria completa, incluindo pedido de clientes, adição de novos produtos e categorias. (Clique aqui)",
+      "Um projeto que simula uma hamburgueria completa, incluindo pedido de clientes, adição de novos produtos e categorias. (Clique aqui)",
     image: codeBurger,
     githubLink: "https://github.com/gaabssantos/code-burger",
     stacks: [
