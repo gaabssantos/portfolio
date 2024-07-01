@@ -1,6 +1,7 @@
 import codeBurger from "../assets/projects/code-burger.png";
 import devMovies from "../assets/projects/dev-movies.png";
-import devBills from "../assets/projects/devbills.png";
+import devBills from "../assets/projects/devbank.png";
+import devBank from "../assets/projects/devbills.png";
 import instagramClone from "../assets/projects/instagram-clone.png";
 import express from "../assets/stacks-icon/express.svg";
 import javascript from "../assets/stacks-icon/javascript.svg";
@@ -116,6 +117,42 @@ const projects = [
     image: devBills,
     githubLink: "https://github.com/gaabssantos/devbills",
     deployLink: "https://devbills.vercel.app/",
+    stacks: [
+      {
+        id: 1,
+        name: "react",
+        image: react,
+      },
+      {
+        id: 2,
+        name: "typescript",
+        image: typescript,
+      },
+      {
+        id: 3,
+        name: "node",
+        image: node,
+      },
+      {
+        id: 4,
+        name: "express",
+        image: express,
+      },
+      {
+        id: 5,
+        name: "mongodb",
+        image: mongodb,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "DevBank",
+    description:
+      "Uma plataforma de um banco virtual, podendo criar contas e fazer transferência. (Clique aqui)",
+    image: devBank,
+    githubLink: "https://github.com/gaabssantos/devbank",
+    deployLink: "https://devbank-five.vercel.app",
     stacks: [
       {
         id: 1,
