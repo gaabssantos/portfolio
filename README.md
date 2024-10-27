@@ -12,7 +12,7 @@
 </ul>
 
 <h1>🌐 Deploy</h1>
-[Clique aqui para visitar meu projeto!](https://gaabssantos.vercel.app)
+<a href="https://gaabssantos.vercel.app">Clique aqui para visitar meu projeto!</a>
 
 <h1>🖼️ Imagens</h1>
 
